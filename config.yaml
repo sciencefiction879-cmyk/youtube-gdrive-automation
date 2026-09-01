@@ -1,0 +1,28 @@
+# Channel & Pipeline Configuration
+
+channel:
+  id: "main_channel"
+  name: "My YouTube Channel"
+  owner_email: "your_email@gmail.com"
+
+google_drive:
+  # The ID of the Google Drive folder containing videos (V1, V2, ...), metadata, and thumbnails
+  # Example: If your URL is https://drive.google.com/drive/folders/1aBcDeFgHiJkLmNoPqRsTuVwXyZ
+  # The folder_id is "1aBcDeFgHiJkLmNoPqRsTuVwXyZ"
+  folder_id: "REPLACE_WITH_YOUR_GDRIVE_FOLDER_ID"
+  service_account_file: "credentials/gdrive_service_account.json"
+
+youtube:
+  client_secret_file: "credentials/client_secret.json"
+  oauth_token_file: "tokens/oauth_token.json"
+  default_category_id: "22"       # 22: People & Blogs, 23: Comedy, 24: Entertainment, 28: Sci & Tech, etc.
+  default_privacy_status: "public" # public, unlisted, or private
+  default_made_for_kids: false
+  shorts_max_seconds: 180         # Videos <= 180s and vertical will be classified as Shorts if not specified
+  description_footer: "\n\n🔔 Subscribe for more videos!"
+
+settings:
+  database_file: "data/state.db"
+  downloads_dir: "downloads"
+  logs_dir: "logs"
+  max_retries: 3
