@@ -115,3 +115,9 @@ jobs:
           name: upload-logs
           path: logs/
           retention-days: 14
+
+      - name: Wipe Temporary Videos & Credentials from Runner
+        if: always()
+        run: |
+          rm -rf downloads/* temp/* credentials/* tokens/*
+          echo "Server space wiped and 100% clean."

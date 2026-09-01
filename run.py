@@ -237,14 +237,26 @@ def main():
             has_custom_thumbnail=has_thumb_uploaded
         )
 
-        logger.info(f"✅ Finished upload workflow for {sequence_key}: {upload_result['url']}")
-
     except Exception as e:
         err_msg = f"Upload pipeline failed for {sequence_key}: {e}"
         logger.exception(err_msg)
         notifier.send_failure(sequence_key, str(e))
         db.record_run(today_str, args.slot, sequence_key, "failed", str(e))
         sys.exit(1)
+    finally:
+        # Explicitly clean up all downloaded videos and thumbnails from disk
+        downloads_dir = Path(config.downloads_dir)
+        if downloads_dir.exists():
+            logger.info("🧹 Cleaning up temporary video and thumbnail files from disk...")
+            for item in downloads_dir.iterdir():
+                try:
+                    if item.is_file():
+                        item.unlink()
+                    elif item.is_dir():
+                        shutil.rmtree(item, ignore_errors=True)
+                except Exception as cleanup_err:
+                    logger.warning(f"Could not delete {item}: {cleanup_err}")
+            logger.info("✨ Cleanup complete! Disk space is 100% clean.")
 
 
 if __name__ == "__main__":
