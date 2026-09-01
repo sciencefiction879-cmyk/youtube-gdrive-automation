@@ -1,28 +1,32 @@
 # Channel & Pipeline Configuration
 
 channel:
-  id: "main_channel"
-  name: "My YouTube Channel"
-  owner_email: "your_email@gmail.com"
+  id: "sciencefiction_channel"
+  name: "Sci-Fi & 3D Animation Chronicles"
+  owner_email: "sciencefiction879@gmail.com"
+
+# Cloud Storage Source
+storage_source: "mega"  # "mega" or "gdrive"
+
+mega:
+  folder_url: "https://mega.nz/folder/OORhyJ4A#hv02IpcssHV3xX6TYvU6Eg"
 
 google_drive:
-  # The ID of the Google Drive folder containing videos (V1, V2, ...), metadata, and thumbnails
-  # Example: If your URL is https://drive.google.com/drive/folders/1aBcDeFgHiJkLmNoPqRsTuVwXyZ
-  # The folder_id is "1aBcDeFgHiJkLmNoPqRsTuVwXyZ"
-  folder_id: "REPLACE_WITH_YOUR_GDRIVE_FOLDER_ID"
+  folder_id: ""
   service_account_file: "credentials/gdrive_service_account.json"
 
 youtube:
   client_secret_file: "credentials/client_secret.json"
   oauth_token_file: "tokens/oauth_token.json"
-  default_category_id: "22"       # 22: People & Blogs, 23: Comedy, 24: Entertainment, 28: Sci & Tech, etc.
+  default_category_id: "24"       # 24: Entertainment, 22: People & Blogs, 28: Sci & Tech
   default_privacy_status: "public" # public, unlisted, or private
   default_made_for_kids: false
-  shorts_max_seconds: 180         # Videos <= 180s and vertical will be classified as Shorts if not specified
-  description_footer: "\n\n🔔 Subscribe for more videos!"
+  shorts_max_seconds: 180
+  description_footer: "\n\n🔔 Subscribe to the channel for more epic 3D Sci-Fi and Animated adventures!"
 
 settings:
   database_file: "data/state.db"
   downloads_dir: "downloads"
   logs_dir: "logs"
-  max_retries: 3
+  auto_generate_metadata: true
+  auto_generate_thumbnail: true

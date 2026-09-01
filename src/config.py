@@ -15,22 +15,20 @@ class Config:
         with open(self.config_path, "r", encoding="utf-8") as f:
             self.data = yaml.safe_load(f) or {}
 
-        self._validate()
-
-    def _validate(self):
-        if "google_drive" not in self.data or not self.data["google_drive"].get("folder_id"):
-            raise ValueError("config.yaml: 'google_drive.folder_id' must be specified.")
-        
-        if "youtube" not in self.data:
-            raise ValueError("config.yaml: 'youtube' section is required.")
-
     @property
     def channel_id(self) -> str:
         return self.data.get("channel", {}).get("id", "main_channel")
 
     @property
+    def storage_source(self) -> str:
+        return os.environ.get("STORAGE_SOURCE", self.data.get("storage_source", "mega")).lower()
+
+    @property
+    def mega_folder_url(self) -> str:
+        return os.environ.get("MEGA_FOLDER_URL", self.data.get("mega", {}).get("folder_url", ""))
+
+    @property
     def gdrive_folder_id(self) -> str:
-        # Allow env override: GDRIVE_FOLDER_ID
         return os.environ.get("GDRIVE_FOLDER_ID", self.data.get("google_drive", {}).get("folder_id", ""))
 
     @property
@@ -47,7 +45,7 @@ class Config:
 
     @property
     def default_category_id(self) -> str:
-        return str(self.data.get("youtube", {}).get("default_category_id", "22"))
+        return str(self.data.get("youtube", {}).get("default_category_id", "24"))
 
     @property
     def default_privacy_status(self) -> str:
@@ -76,6 +74,14 @@ class Config:
     @property
     def logs_dir(self) -> str:
         return self.data.get("settings", {}).get("logs_dir", "logs")
+
+    @property
+    def auto_generate_metadata(self) -> bool:
+        return bool(self.data.get("settings", {}).get("auto_generate_metadata", True))
+
+    @property
+    def auto_generate_thumbnail(self) -> bool:
+        return bool(self.data.get("settings", {}).get("auto_generate_thumbnail", True))
 
     @property
     def discord_webhook_url(self) -> str:

@@ -13,14 +13,9 @@ on:
         required: false
         default: false
       force_video:
-        description: 'Force specific video sequence (e.g. V1, V5)'
+        description: 'Force specific video sequence (e.g. V1, V2)'
         required: false
         default: ''
-
-  # Example scheduled cron (can be triggered externally or configured here)
-  # schedule:
-  #   - cron: '0 17 * * *'  # 17:00 UTC
-  #   - cron: '0 19 * * *'  # 19:00 UTC
 
 concurrency:
   group: youtube-upload
@@ -44,10 +39,10 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install System Dependencies (ffmpeg / ffprobe)
+      - name: Install System Dependencies (ffmpeg & megatools)
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          sudo apt-get install -y ffmpeg megatools
 
       - name: Install Python Dependencies
         run: |
@@ -56,15 +51,10 @@ jobs:
 
       - name: Restore Credentials from Secrets
         env:
-          GDRIVE_SERVICE_ACCOUNT_B64: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_B64 }}
           YOUTUBE_CLIENT_SECRET_B64: ${{ secrets.YOUTUBE_CLIENT_SECRET_B64 }}
           YOUTUBE_OAUTH_TOKEN_B64: ${{ secrets.YOUTUBE_OAUTH_TOKEN_B64 }}
         run: |
           mkdir -p credentials tokens data logs downloads
-          
-          if [ -n "$GDRIVE_SERVICE_ACCOUNT_B64" ]; then
-            echo "$GDRIVE_SERVICE_ACCOUNT_B64" | base64 -d > credentials/gdrive_service_account.json
-          fi
           
           if [ -n "$YOUTUBE_CLIENT_SECRET_B64" ]; then
             echo "$YOUTUBE_CLIENT_SECRET_B64" | base64 -d > credentials/client_secret.json
@@ -77,7 +67,7 @@ jobs:
       - name: Run Sequential Uploader
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          MEGA_FOLDER_URL: ${{ secrets.MEGA_FOLDER_URL }}
         run: |
           CMD="python run.py"
           
