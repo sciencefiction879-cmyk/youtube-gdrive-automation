@@ -1,6 +1,10 @@
 name: YouTube Sequential Uploader
 
 on:
+  schedule:
+    # Daily upload at 14:00 UTC (7:00 PM Pakistan Standard Time)
+    - cron: '0 14 * * *'
+
   workflow_dispatch:
     inputs:
       slot:
