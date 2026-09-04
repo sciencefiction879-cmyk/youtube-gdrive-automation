@@ -142,12 +142,37 @@ def main():
         video_type_str = "short" if is_short else "longform"
         logger.info(f"Video format classified as: {video_type_str.upper()}")
 
-        # 4. Resolve Metadata (File or Auto-Generated)
+        # 4. Resolve Metadata (File, Catalog, or Auto-Generated)
         metadata = None
         if target_json_path and target_json_path.exists():
-            logger.info(f"Loading metadata from file: {target_json_path}")
+            logger.info(f"Loading metadata from individual JSON file: {target_json_path}")
             with open(target_json_path, "r", encoding="utf-8") as f:
                 metadata = json.load(f)
+        elif hasattr(target_item, "catalog_metadata") and target_item.catalog_metadata:
+            cat = target_item.catalog_metadata
+            raw_title = cat.get("title", f"Part {sequence_num}")
+            desc = cat.get("description", "")
+            
+            # Format title nicely with #Shorts if it is a Short
+            if is_short and not raw_title.lower().endswith("#shorts"):
+                final_title = f"{raw_title} #Shorts"
+            else:
+                final_title = raw_title
+
+            # Extract hashtags from description for YouTube tags
+            hashtags = [w.strip("#.,!?").strip() for w in desc.split() if w.startswith("#") and len(w) > 1]
+            tags = list(dict.fromkeys(hashtags + ["Shorts", "Motivation", "Respect", "Story", "Viral"]))
+
+            logger.info(f"Using exact catalog metadata for {sequence_key}: '{final_title}'")
+            metadata = {
+                "title": final_title,
+                "description": desc,
+                "tags": tags[:15],
+                "categoryId": config.default_category_id,
+                "privacyStatus": config.default_privacy_status,
+                "isShort": is_short,
+                "madeForKids": False
+            }
         elif config.auto_generate_metadata:
             logger.info(f"Auto-generating rich Sci-Fi metadata for {sequence_key} (Episode {sequence_num})...")
             if mega_manager:

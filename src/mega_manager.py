@@ -23,12 +23,14 @@ class MegaSequenceItem:
         video_path: Optional[Path] = None,
         json_path: Optional[Path] = None,
         thumbnail_path: Optional[Path] = None,
+        catalog_metadata: Optional[Dict[str, Any]] = None
     ):
         self.sequence_num = sequence_num
         self.sequence_key = sequence_key  # e.g. "V1"
         self.video_path = video_path
         self.json_path = json_path
         self.thumbnail_path = thumbnail_path
+        self.catalog_metadata = catalog_metadata
 
     @property
     def has_video(self) -> bool:
@@ -36,7 +38,7 @@ class MegaSequenceItem:
 
     @property
     def has_metadata(self) -> bool:
-        return self.json_path is not None and self.json_path.exists()
+        return (self.json_path is not None and self.json_path.exists()) or (self.catalog_metadata is not None)
 
     @property
     def has_thumbnail(self) -> bool:
@@ -102,9 +104,39 @@ class MegaManager:
             return int(match.group(1))
         return None
 
+    def load_unified_catalog(self) -> Dict[str, Dict[str, Any]]:
+        """Loads unified catalog metadata from videos_metadata.json if available."""
+        catalog: Dict[str, Dict[str, Any]] = {}
+        possible_paths = [
+            self.downloads_dir / "videos_metadata.json",
+            Path("data/videos_metadata.json"),
+        ]
+        if self.downloads_dir.exists():
+            for p in self.downloads_dir.rglob("*metadata*.json"):
+                possible_paths.append(p)
+
+        for cat_path in possible_paths:
+            if cat_path.exists():
+                try:
+                    with open(cat_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        if isinstance(data, list):
+                            for entry in data:
+                                key = entry.get("video_number") or entry.get("video_file")
+                                if key:
+                                    stem = Path(key).stem.upper()
+                                    catalog[stem] = entry
+                            logger.info(f"Loaded {len(catalog)} metadata entries from {cat_path}")
+                            break
+                except Exception as e:
+                    logger.warning(f"Failed to parse catalog metadata from {cat_path}: {e}")
+
+        return catalog
+
     def scan_sequence_items(self) -> Dict[int, MegaSequenceItem]:
         """Scans the downloaded directory and maps all V{N} files."""
         items: Dict[int, MegaSequenceItem] = {}
+        catalog = self.load_unified_catalog()
 
         # Scan recursively in downloads_dir
         for file_path in self.downloads_dir.rglob("*"):
@@ -118,13 +150,17 @@ class MegaManager:
             if seq_num is None:
                 continue
 
+            seq_key = f"V{seq_num}"
             if seq_num not in items:
                 items[seq_num] = MegaSequenceItem(
                     sequence_num=seq_num,
-                    sequence_key=f"V{seq_num}"
+                    sequence_key=seq_key,
+                    catalog_metadata=catalog.get(seq_key.upper())
                 )
 
             item = items[seq_num]
+            if not item.catalog_metadata and seq_key.upper() in catalog:
+                item.catalog_metadata = catalog[seq_key.upper()]
 
             if ext in VIDEO_EXTENSIONS:
                 item.video_path = file_path

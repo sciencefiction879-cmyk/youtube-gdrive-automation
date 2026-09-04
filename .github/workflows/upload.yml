@@ -2,13 +2,15 @@ name: YouTube Sequential Uploader
 
 on:
   schedule:
-    # Daily upload at 14:00 UTC (7:00 PM Pakistan Standard Time)
+    # Slot 1: 7:00 PM Pakistan Standard Time (14:00 UTC)
     - cron: '0 14 * * *'
+    # Slot 2: 10:00 PM Pakistan Standard Time (17:00 UTC)
+    - cron: '0 17 * * *'
 
   workflow_dispatch:
     inputs:
       slot:
-        description: 'Slot identifier (e.g. slot1, slot2)'
+        description: 'Slot identifier (slot1 = 7PM PKT, slot2 = 10PM PKT)'
         required: false
         default: 'slot1'
       dry_run:
@@ -22,7 +24,7 @@ on:
         default: ''
 
 concurrency:
-  group: youtube-upload
+  group: youtube-upload-${{ github.event.schedule || github.event.inputs.slot }}
   cancel-in-progress: false
 
 jobs:
@@ -68,16 +70,29 @@ jobs:
             echo "$YOUTUBE_OAUTH_TOKEN_B64" | base64 -d > tokens/oauth_token.json
           fi
 
+      - name: Determine Slot from Schedule
+        id: slot_detect
+        run: |
+          if [ -n "${{ github.event.inputs.slot }}" ]; then
+            # Manual trigger - use provided slot
+            echo "SLOT=${{ github.event.inputs.slot }}" >> $GITHUB_ENV
+          elif [ "${{ github.event.schedule }}" = "0 14 * * *" ]; then
+            # 7PM PKT cron
+            echo "SLOT=slot1" >> $GITHUB_ENV
+          elif [ "${{ github.event.schedule }}" = "0 17 * * *" ]; then
+            # 10PM PKT cron
+            echo "SLOT=slot2" >> $GITHUB_ENV
+          else
+            echo "SLOT=slot1" >> $GITHUB_ENV
+          fi
+          echo "Detected slot: $SLOT"
+
       - name: Run Sequential Uploader
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           MEGA_FOLDER_URL: ${{ secrets.MEGA_FOLDER_URL }}
         run: |
-          CMD="python run.py"
-          
-          if [ -n "${{ github.event.inputs.slot }}" ]; then
-            CMD="$CMD --slot ${{ github.event.inputs.slot }}"
-          fi
+          CMD="python run.py --slot $SLOT"
           
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             CMD="$CMD --dry-run"
@@ -99,7 +114,7 @@ jobs:
           if [ -f "data/state.db" ]; then
             git add data/state.db
             if ! git diff-index --quiet HEAD --; then
-              git commit -m "Update upload state DB [skip ci]"
+              git commit -m "Update upload state DB [$SLOT] [skip ci]"
               for i in 1 2 3; do
                 git pull --rebase origin main && git push origin main && break || sleep 5
               done
@@ -112,7 +127,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: upload-logs
+          name: upload-logs-${{ env.SLOT }}
           path: logs/
           retention-days: 14
 
