@@ -68,14 +68,18 @@ def main():
     if config.storage_source == "mega":
         logger.info(f"Storage source: MEGA ({config.mega_folder_url})")
         mega_manager = MegaManager(config.mega_folder_url, config.downloads_dir)
-        try:
-            mega_manager.download_folder_contents()
-        except Exception as e:
-            err_msg = f"Failed to download from MEGA: {e}"
-            logger.error(err_msg)
-            notifier.send_failure(None, "MEGA Download Error", str(e))
-            db.record_run(today_str, args.slot, None, "failed", err_msg)
-            sys.exit(1)
+        target_forced_file = Path(config.downloads_dir) / f"{args.force_video}.mp4" if args.force_video else None
+        if target_forced_file and target_forced_file.exists():
+            logger.info(f"Target video {target_forced_file.name} is already present in downloads/. Skipping re-download.")
+        else:
+            try:
+                mega_manager.download_folder_contents()
+            except Exception as e:
+                err_msg = f"Failed to download from MEGA: {e}"
+                logger.error(err_msg)
+                notifier.send_failure(None, "MEGA Download Error", str(e))
+                db.record_run(today_str, args.slot, None, "failed", err_msg)
+                sys.exit(1)
 
         items = mega_manager.scan_sequence_items()
         if args.force_video:
