@@ -81,11 +81,13 @@ class YouTubeUploader:
             },
             "status": {
                 "privacyStatus": privacy_status,
-                "selfDeclaredMadeForKids": made_for_kids
+                "selfDeclaredMadeForKids": made_for_kids,
+                "containsSyntheticMedia": True  # AI-generated content label (required by YouTube policy)
             }
         }
 
         logger.info(f"Initiating upload for video: '{title}' (Type: {'Short' if is_short else 'Long-form'})...")
+        logger.info("AI-generated content label: ENABLED ✅")
 
         media = MediaFileUpload(
             str(video_path),
