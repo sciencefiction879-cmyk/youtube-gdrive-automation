@@ -1,275 +1,857 @@
 [
   {
-    "video_file": "V4.mp4",
-    "video_number": "V4",
-    "prompt_id": "P62",
-    "title": "P62: THE KETTLE OWNS THE EMPIRE",
-    "description": "He insulted the tea seller... until he learned who really owned the empire. ☕💼😱 #Shorts #Motivation #Respect"
+    "video_file": "v1.mp4",
+    "video_number": "v1",
+    "prompt_id": "P11",
+    "title": "P11: TASTE THE KARMA",
+    "description": "A food critic mocked an old street vendor... until the restaurant owner bowed and revealed who owned the entire publishing magazine. 🥟💼😱 #Shorts #Karma #Respect #Motivation",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V5.mp4",
-    "video_number": "V5",
-    "prompt_id": "P63",
-    "title": "P63: MASTERS DON'T SHOUT",
-    "description": "She shouted at the barber. He'd trained 4 presidents. ✂️😱💈 #Shorts #Respect #Motivation"
+    "video_file": "v2.mp4",
+    "video_number": "v2",
+    "prompt_id": "P12",
+    "title": "P12: KNOWLEDGE IS POWER",
+    "description": "Arrogant principal fired a beloved veteran teacher... until she revealed she donated the entire school 20 years ago. 🏫📜😱 #Shorts #Karma #Respect #Knowledge",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V6.mp4",
-    "video_number": "V6",
-    "prompt_id": "P64",
-    "title": "P64: MAIL CARRIES MORE THAN LETTERS",
-    "description": "The rude homeowner vs. the mailman who owns everything. 📮😱💼 #Shorts #Motivation #Respect"
+    "video_file": "v3.mp4",
+    "video_number": "v3",
+    "prompt_id": "P13",
+    "title": "P13: NEVER LOOK DOWN",
+    "description": "Rich student and father yelled at an old janitor... until the university president welcomed the true founder. 🧹🎓😱 #Shorts #Respect #NeverJudge #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V7.mp4",
-    "video_number": "V7",
-    "prompt_id": "P65",
-    "title": "P65: THE FRONT LINE OWNS THE EMPIRE",
-    "description": "Rude customer vs. the delivery rider who owns the company. 🌧️🏍️😱 #Shorts #Respect #Motivation"
+    "video_file": "v4.mp4",
+    "video_number": "v4",
+    "prompt_id": "P14",
+    "title": "P14: THE TRUTH RISES",
+    "description": "Cruel stepmother kicked the daughter out... until the family lawyer read the real will leaving everything to Amelia. 📜🏰😱 #Shorts #Drama #Truth #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V8.mp4",
-    "video_number": "V8",
-    "prompt_id": "P66",
-    "title": "P66: SUCCESS IS THE BEST REVIEW",
-    "description": "She destroyed his food truck. Now he owns the city. 🍔🚚😱 #Shorts #Motivation #Hustle"
+    "video_file": "v5.mp4",
+    "video_number": "v5",
+    "prompt_id": "P15",
+    "title": "P15: KARMA HAS A TIMELINE",
+    "description": "Jealous cousin tried to ruin the wedding with a fake video... until the bride proved she owned the studio and the cousin's apartment. 👰‍♀️💍😱 #Shorts #Karma #WeddingDrama #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V9.mp4",
-    "video_number": "V9",
-    "prompt_id": "P67",
-    "title": "P67: HISTORY BELONGS TO ITS KEEPERS",
-    "description": "They laughed at the night guard. He dug up history. 🏛️🔦😱 #Shorts #History #Respect"
+    "video_file": "v6.mp4",
+    "video_number": "v6",
+    "prompt_id": "P16",
+    "title": "P16: RESPECT THE PEOPLE BELOW YOU",
+    "description": "CEO fired the quiet janitor over spilled coffee... next morning the janitor evicted him from his own tower. 🏢🧹😱 #Shorts #Karma #Leadership #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V10.mp4",
-    "video_number": "V10",
-    "prompt_id": "P68",
-    "title": "P68: ELEVATORS GO BOTH WAYS",
-    "description": "Rushed the elevator man. He built the hotel. 🛗🏨😱 #Shorts #Legacy #Respect"
+    "video_file": "v7.mp4",
+    "video_number": "v7",
+    "prompt_id": "P17",
+    "title": "P17: LEADERSHIP IS TESTED",
+    "description": "Arrogant son shoved past the guard... without knowing the guard was the real founding grandfather testing his legacy. 👔🎖️😱 #Shorts #Leadership #Respect #Motivation",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V11.mp4",
-    "video_number": "V11",
-    "prompt_id": "P69",
-    "title": "P69: THE HANDS BEHIND THE LABEL",
-    "description": "She insulted the cobbler. He made her designer heels. 👠🔨😱 #Shorts #Fashion #Respect"
+    "video_file": "v8.mp4",
+    "video_number": "v8",
+    "prompt_id": "P18",
+    "title": "P18: NEVER JUDGE BY THE SUIT",
+    "description": "Smug banker called an old man a beggar... until the bank president rushed out to greet the 60% majority owner. 🏦💼😱 #Shorts #NeverJudge #Karma #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V12.mp4",
-    "video_number": "V12",
-    "prompt_id": "P71",
-    "title": "P71: THE TIDE KNOWS THE TRUTH",
-    "description": "Mocked the fisherman. The CEO bowed to him. ⛵🐟😱 #Shorts #Respect #Motivation"
+    "video_file": "v9.mp4",
+    "video_number": "v9",
+    "prompt_id": "P19",
+    "title": "P19: THE QUIET ONES OWN THE WORLD",
+    "description": "Rude tycoon poured wine over a young busboy... until the CEO revealed the busboy's family owned the hotel group. 🍷🏨😱 #Shorts #Respect #Humility #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V13.mp4",
-    "video_number": "V13",
-    "prompt_id": "P72",
-    "title": "P72: EVERYTHING KIND TAKES TIME",
-    "description": "Rushed the beekeeper. She supplies his empire. 🐝🍯😱 #Shorts #Patience #Motivation"
+    "video_file": "v10.mp4",
+    "video_number": "v10",
+    "prompt_id": "P20",
+    "title": "P20: BE GRATEFUL",
+    "description": "Rich students bullied a scholarship girl... until the dean revealed she was the founder's daughter and cancelled their scholarships. 🎒📚😱 #Shorts #Karma #Respect #Justice",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V14.mp4",
-    "video_number": "V14",
-    "prompt_id": "P73",
-    "title": "P73: EVERY MAESTRO STARTED IN A TUNNEL",
-    "description": "He offered $50 for her violin. She's the maestro. 🎻🚇😱 #Shorts #Music #Respect"
+    "video_file": "v11.mp4",
+    "video_number": "v11",
+    "prompt_id": "P21",
+    "title": "P21: KARMA IS A CEO",
+    "description": "Elder sister stole her sister's fiancé at the company gala... until the younger sister proved she was named CEO. 🥂👗😱 #Shorts #CEO #Karma #Drama",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V15.mp4",
-    "video_number": "V15",
-    "prompt_id": "P74",
-    "title": "P74: PATIENCE IS THE GRANDMASTER",
-    "description": "AI chess engine vs. 78-year-old grandmaster. ♟️🤖😱 #Shorts #Chess #Wisdom"
+    "video_file": "v12.mp4",
+    "video_number": "v12",
+    "prompt_id": "P22",
+    "title": "P22: THE POOR TEACH THE RICH",
+    "description": "Businessman insulted an elderly taxi driver... only to discover the driver owned his office tower and company shares. 🚕🌧️😱 #Shorts #NeverJudge #Karma #Wisdom",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V16.mp4",
-    "video_number": "V16",
-    "prompt_id": "P75",
-    "title": "P75: TWENTY YEARS BEAT TEN MANUALS",
-    "description": "Surgeon ignored the nurse. She saved his career. 🏥⚕️😱 #Shorts #Medicine #Respect"
+    "video_file": "v13.mp4",
+    "video_number": "v13",
+    "prompt_id": "P23",
+    "title": "P23: YOU DON'T KNOW WHO YOU'RE BANNING",
+    "description": "Aggressive guard and shopper banned a teenage skateboarder... until the mall manager revealed he was the owner's grandson. 🛹🏬😱 #Shorts #Karma #Respect #Justice",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V17.mp4",
-    "video_number": "V17",
-    "prompt_id": "P77",
-    "title": "P77: FEAR FALLS TO THE TRAINED",
-    "description": "Mocked his skydiving coach. He founded the league. 🪂✈️😱 #Shorts #Courage #Respect"
+    "video_file": "v14.mp4",
+    "video_number": "v14",
+    "prompt_id": "P24",
+    "title": "P24: NEVER INSULT THE ARTIST",
+    "description": "Rude influencer threatened to blacklist a hair stylist... until a superstar revealed the stylist owned the salon empire. ✂️💇‍♀️😱 #Shorts #Karma #Respect #Artist",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V18.mp4",
-    "video_number": "V18",
-    "prompt_id": "P78",
-    "title": "P78: THE QUIET SWING KNOWS",
-    "description": "He yelled at his caddie. The caddie owns the course. ⛳🏌️😱 #Shorts #Golf #Respect"
+    "video_file": "v15.mp4",
+    "video_number": "v15",
+    "prompt_id": "P25",
+    "title": "P25: STRENGTH ISN'T LOUD",
+    "description": "Arrogant gym member mocked a quiet trainer... until the Olympic coach revealed he owned the gym and cancelled his membership. 🏋️‍♂️🥇😱 #Shorts #Fitness #Respect #Strength",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V19.mp4",
-    "video_number": "V19",
-    "prompt_id": "P80",
-    "title": "P80: THE VOICE IS A CONTRACT",
-    "description": "Famous author mocked his ghostwriter. Big mistake. ✍️📞😱 #Shorts #Writing #Motivation"
+    "video_file": "v16.mp4",
+    "video_number": "v16",
+    "prompt_id": "P26",
+    "title": "P26: RESPECT THE PEOPLE WHO SERVE YOU",
+    "description": "Customer screamed at a young cashier over a coupon... until the store manager revealed she was the owner's daughter. 🛒🏪😱 #Shorts #Respect #CustomerService #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V20.mp4",
-    "video_number": "V20",
-    "prompt_id": "P82",
-    "title": "P82: EVERY MASTERPIECE IS TUNED",
-    "description": "Diva tried to fire the tuner. He built the hall. 🎹🎭😱 #Shorts #Music #Respect"
+    "video_file": "v17.mp4",
+    "video_number": "v17",
+    "prompt_id": "P27",
+    "title": "P27: PROGRESS NEEDS ROOTS",
+    "description": "Developer threatened to bulldoze a family farm... until the farmhand revealed he bought the developer's parent company. 🌾🚜😱 #Shorts #Karma #FamilyRoots #Justice",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V21.mp4",
-    "video_number": "V21",
-    "prompt_id": "P83",
-    "title": "P83: THE ROAD OWNS THE TOWN",
-    "description": "Kid mocked the bus conductor. He owns the transit system. 🚌🎫😱 #Shorts #Respect #Legacy"
+    "video_file": "v18.mp4",
+    "video_number": "v18",
+    "prompt_id": "P28",
+    "title": "P28: NEVER LOOK DOWN ON THE HELP",
+    "description": "VIP donor kicked a janitor in the hospital... until the same man walked into surgery as the hospital chairman and chief trauma surgeon. 🏥🩺😱 #Shorts #Karma #Respect #Hero",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V22.mp4",
-    "video_number": "V22",
-    "prompt_id": "P84",
-    "title": "P84: THE LINE RUNS ON DUTY",
-    "description": "Exec patted the station master. The minister bowed to him. 🚂🎩😱 #Shorts #Respect #Duty"
+    "video_file": "v19.mp4",
+    "video_number": "v19",
+    "prompt_id": "P29",
+    "title": "P29: ELEGANCE IS BEHAVIOR",
+    "description": "Rude customer insulted a boutique associate... until the founder revealed she created the perfume line from scratch. 💎✨😱 #Shorts #Elegance #Respect #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V23.mp4",
-    "video_number": "V23",
-    "prompt_id": "P85",
-    "title": "P85: THE BROOM OWNS THE SKY",
-    "description": "Kicked the cleaner's broom. Got banned from flying. ✈️🧹😱 #Shorts #Respect #Karma"
+    "video_file": "v20.mp4",
+    "video_number": "v20",
+    "prompt_id": "P30",
+    "title": "P30: THE TRUTH IS THE BEST RECIPE",
+    "description": "Fake owner screamed at the head chef... until the chef produced the original 60-year deed and had him arrested. 👨‍🍳🍳😱 #Shorts #Chef #Truth #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V24.mp4",
-    "video_number": "V24",
-    "prompt_id": "P86",
-    "title": "P86: THE VENDING MACHINE KNOWS",
-    "description": "Mocked the delivery guy. He bought the company. 🥤📦😱 #Shorts #Business #Motivation"
+    "video_file": "v21.mp4",
+    "video_number": "v21",
+    "prompt_id": "P31",
+    "title": "P31: THE VALET OWNS THE LOT",
+    "description": "Rich man threw car keys at a young valet... until the valet walked into the boardroom and repossessed his leased supercar. 🏎️🔑😱 #Shorts #Valet #Karma #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V25.mp4",
-    "video_number": "V25",
-    "prompt_id": "P87",
-    "title": "P87: EVERY EMPIRE STARTS AS DROPS",
-    "description": "Laughed at the water guy. He owns the building. 💧🏢😱 #Shorts #Hustle #Respect"
+    "video_file": "v22.mp4",
+    "video_number": "v22",
+    "prompt_id": "P32",
+    "title": "P32: DESIGN IS POWER",
+    "description": "Supermodel bullied an intern backstage... until the creative director announced the intern designed the entire show. 👗✨😱 #Shorts #Fashion #Design #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V26.mp4",
-    "video_number": "V26",
-    "prompt_id": "P88",
-    "title": "P88: THE SOIL FEEDS THE CRITICS",
-    "description": "Chef mocked the farmer. She supplies his kitchen. 🥕🌾😱 #Shorts #Food #Respect"
+    "video_file": "v23.mp4",
+    "video_number": "v23",
+    "prompt_id": "P33",
+    "title": "P33: THE CREATOR OWNS THE THRONE",
+    "description": "CEO publicly fired a quiet coder... until the coder sold his startup and took the CEO's board seat by Friday. 💻📈😱 #Shorts #Tech #Coding #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V27.mp4",
-    "video_number": "V27",
-    "prompt_id": "P89",
-    "title": "P89: FEEDING PEOPLE IS A LIFESTYLE",
-    "description": "Influencer attacked the butcher. He won a national award. 🥩🔪😱 #Shorts #Humanity #Respect"
+    "video_file": "v24.mp4",
+    "video_number": "v24",
+    "prompt_id": "P34",
+    "title": "P34: SHELVES HIDE GOLD",
+    "description": "Pompous author mocked a quiet librarian... until the publisher revealed she was the award-winning editor-in-chief and publishing house owner. 📚📖😱 #Shorts #Books #Wisdom #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V28.mp4",
-    "video_number": "V28",
-    "prompt_id": "P90",
-    "title": "P90: THE PIN KNOWS THE FIT",
-    "description": "Ripped off the tailor's jacket. Big mistake. 🧵✂️😱 #Shorts #Fashion #Respect"
+    "video_file": "v25.mp4",
+    "video_number": "v25",
+    "prompt_id": "P35",
+    "title": "P35: RESPECT THE HEALERS",
+    "description": "Angry customer yelled at a pharmacist... until the district manager revealed the pharmacist was the chain founder. 💊🩺😱 #Shorts #Pharmacy #Respect #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V29.mp4",
-    "video_number": "V29",
-    "prompt_id": "P91",
-    "title": "P91: AUTHENTICITY HAS NO PRICE",
-    "description": "Called his vase fake. The museum disagreed. 🏺🔍😱 #Shorts #Antiques #History"
+    "video_file": "v26.mp4",
+    "video_number": "v26",
+    "prompt_id": "P36",
+    "title": "P36: GREASE BUILT THE EMPIRE",
+    "description": "Customer called the mechanic a grease monkey... until the mechanic revealed he owned 30 car dealerships. 🔧🚗😱 #Shorts #Mechanic #Respect #Hustle",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V30.mp4",
-    "video_number": "V30",
-    "prompt_id": "P92",
-    "title": "P92: THE CEO ANSWERS AT MIDNIGHT",
-    "description": "Yelled at customer service. \"I'm the CEO.\" ☎️🌙😱 #Shorts #Leadership #Motivation"
+    "video_file": "v27.mp4",
+    "video_number": "v27",
+    "prompt_id": "P37",
+    "title": "P37: THE REAL STAR SPEAKS",
+    "description": "Manager threatened a sound engineer backstage... until the crowd chanted the engineer's name and the record label dropped them. 🎧🎶😱 #Shorts #Music #Producer #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V31.mp4",
-    "video_number": "V31",
-    "prompt_id": "P94",
-    "title": "P94: EVERY EMPIRE NEEDS PIZZA",
-    "description": "Mocked the pizza guy. He owns the building. 🍕🏢😱 #Shorts #Pizza #Respect"
+    "video_file": "v28.mp4",
+    "video_number": "v28",
+    "prompt_id": "P38",
+    "title": "P38: TIPS DON'T BUY CLASS",
+    "description": "Snobbish guest threw a coin at a bellboy... until the owner embraced the bellboy as his heir and cancelled the guest's stay. 🛎️🏨😱 #Shorts #Hotel #Respect #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V32.mp4",
-    "video_number": "V32",
-    "prompt_id": "P95",
-    "title": "P95: THE WILL KNOWS YOUR HEART",
-    "description": "Bragged about his inheritance. The will said otherwise. 💼📜😱 #Shorts #Family #Character"
+    "video_file": "v29.mp4",
+    "video_number": "v29",
+    "prompt_id": "P39",
+    "title": "P39: DESIGN BUILDS CITIES",
+    "description": "Contractor threatened an architect on site... until the developer revealed the architect's firm owned the entire building project. 📐🏗️😱 #Shorts #Architecture #Respect #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V33.mp4",
-    "video_number": "V33",
-    "prompt_id": "P96",
-    "title": "P96: KITCHENS HOLD HISTORY",
-    "description": "Spat out her cake. It was his grandma's recipe. 🍰👵😱 #Shorts #Baking #Legacy"
+    "video_file": "v30.mp4",
+    "video_number": "v30",
+    "prompt_id": "P40",
+    "title": "P40: THE COFFEE BOY OWNS THE COURTROOM",
+    "description": "Senior lawyer told a paralegal she'd never make it... until she passed the bar and represented the firm's biggest billionaire client. ⚖️💼😱 #Shorts #Lawyer #Motivation #Success",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V34.mp4",
-    "video_number": "V34",
-    "prompt_id": "P97",
-    "title": "P97: THE VAULT REMEMBERS",
-    "description": "Laughed at the security guard. He runs the bank. 🏦🔐😱 #Shorts #Banking #Respect"
+    "video_file": "v31.mp4",
+    "video_number": "v31",
+    "prompt_id": "P41",
+    "title": "P41: THE SHELVES RISE",
+    "description": "Bullying manager yelled at a stock boy... 6 months later the stock boy returned as the new CEO of the distribution group. 📦🏬😱 #Shorts #Hustle #Motivation #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V35.mp4",
-    "video_number": "V35",
-    "prompt_id": "P99",
-    "title": "P99: SOME THINGS OUTRANK PROFIT",
-    "description": "Threatened to bulldoze the beach. The mayor said no. 🏖️🏗️😱 #Shorts #Environment #Community"
+    "video_file": "v32.mp4",
+    "video_number": "v32",
+    "prompt_id": "P42",
+    "title": "P42: BEAUTY IS EARNED",
+    "description": "Arrogant bride screamed at her make-up artist... until a celebrity singer revealed she was Paris' top celebrity stylist. 💄👰‍♀️😱 #Shorts #Bridal #Respect #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V36.mp4",
-    "video_number": "V36",
-    "prompt_id": "P100",
-    "title": "P100: THE WETLAND KEEPS THE CITY ALIVE",
-    "description": "Spat in the wetland. It's now World Heritage. 🌿🦅😱 #Shorts #Environment #Nature"
+    "video_file": "v33.mp4",
+    "video_number": "v33",
+    "prompt_id": "P43",
+    "title": "P43: THE LENS NEVER LIES",
+    "description": "Editor threw a photographer's portfolio... until the magazine owner appointed the photographer as the new creative director. 📷🎨😱 #Shorts #Photography #Art #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V37.mp4",
-    "video_number": "V37",
-    "prompt_id": "P101",
-    "title": "P101: PLUMBING KNOWS WHERE THE CASTLE LEAKS",
-    "description": "Screamed at the plumber. He runs the building. 🔧💦😱 #Shorts #Respect #Plumber"
+    "video_file": "v34.mp4",
+    "video_number": "v34",
+    "prompt_id": "P44",
+    "title": "P44: THE LAST SHALL BE FIRST",
+    "description": "Cruel landlord evicted a struggling startup father... 3 weeks later the father bought the whole building after going public. 🏙️💰😱 #Shorts #Startup #Hustle #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V38.mp4",
-    "video_number": "V38",
-    "prompt_id": "P102",
-    "title": "P102: THE SPARK BELONGS TO THE WORKER",
-    "description": "Threatened lawyers. He holds the power license. ⚡🔌😱 #Shorts #Electrician #Respect"
+    "video_file": "v35.mp4",
+    "video_number": "v35",
+    "prompt_id": "P45",
+    "title": "P45: SAFETY OVER SPEED",
+    "description": "Furious parent screamed at an elderly bus driver for being late... until the driver revealed he avoided a major road collapse. 🚌🛡️😱 #Shorts #Safety #Hero #Respect",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V39.mp4",
-    "video_number": "V39",
-    "prompt_id": "P103",
-    "title": "P103: GARDENERS INHERIT THE EARTH",
-    "description": "Threatened to bulldoze the garden. The gardener got everything. 🌻🌹😱 #Shorts #Legacy #Gardening"
+    "video_file": "v36.mp4",
+    "video_number": "v36",
+    "prompt_id": "P46",
+    "title": "P46: FLOUR TO FORTUNE",
+    "description": "Harsh loan officer tried to foreclose on an old bakery... until the town rallied and the baker's apprentice became the bank president. 🥖🍞😱 #Shorts #Bakery #Community #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V40.mp4",
-    "video_number": "V40",
-    "prompt_id": "P104",
-    "title": "P104: THE LAMP KEEPS THE SEA HONEST",
-    "description": "Called the lighthouse obsolete. His ship needed saving. 🗼⛵😱 #Shorts #Lighthouse #Respect"
+    "video_file": "v37.mp4",
+    "video_number": "v37",
+    "prompt_id": "P47",
+    "title": "P47: PROTECT THE HELPLESS",
+    "description": "City official mocked a zoo groundskeeper... until the groundskeeper revealed he was the billionaire trustee who protected the land forever. 🦁🌳😱 #Shorts #Animals #Conservation #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V41.mp4",
-    "video_number": "V41",
-    "prompt_id": "P105",
-    "title": "P105: SOME THINGS ARE NOT CONTENT",
-    "description": "Influencer mocked the archaeologist. He's the world's expert. 🏺🎓😱 #Shorts #History #Respect"
+    "video_file": "v38.mp4",
+    "video_number": "v38",
+    "prompt_id": "P48",
+    "title": "P48: REAL WEALTH IS COURAGE",
+    "description": "Tycoon mocked a volunteer firefighter at a charity gala... until a sudden kitchen fire proved who the real hero was. 🚒🔥😱 #Shorts #Firefighter #Courage #Hero",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   },
   {
-    "video_file": "V42.mp4",
-    "video_number": "V42",
-    "prompt_id": "P106",
-    "title": "P106: EVERY DOG IS A VIP",
-    "description": "Called the groomer contaminated. She saves thousands of dogs. 🐕✂️😱 #Shorts #Dogs #Respect"
+    "video_file": "v39.mp4",
+    "video_number": "v39",
+    "prompt_id": "P49",
+    "title": "P49: HARVEST WHAT YOU SOW",
+    "description": "Greedy merchant threw water at an elderly fruit vendor... until the market landowner gave the stall to the vendor rent-free for life. 🍎🍊😱 #Shorts #Market #Kindness #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v40.mp4",
+    "video_number": "v40",
+    "prompt_id": "P50",
+    "title": "P50: THE DESK IS A LAUNCHPAD",
+    "description": "Mean manager tried to replace a patient receptionist... until the executive chairman promoted her directly to executive assistant. 🖥️📑😱 #Shorts #Workplace #Respect #Success",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v41.mp4",
+    "video_number": "v41",
+    "prompt_id": "P51",
+    "title": "P51: EVERY PLATE TELLS A STORY",
+    "description": "Head chef blamed and fired the dishwasher... until the food inspector revealed the dishwasher saved the restaurant from contamination. 🍽️🧼😱 #Shorts #Chef #Integrity #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v42.mp4",
+    "video_number": "v42",
+    "prompt_id": "P52",
+    "title": "P52: AUTHORITY IS EARNED",
+    "description": "Rude passenger mocked a transit inspector... until the transit director honoured the inspector for busting a counterfeit ring. 🚇🎫😱 #Shorts #Transit #Justice #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v43.mp4",
+    "video_number": "v43",
+    "prompt_id": "P53",
+    "title": "P53: THE PLANNER OWNS THE DAY",
+    "description": "Mother-in-law accused the wedding planner of stealing... until the venue owner showed how the planner saved the entire wedding. 💐🏰😱 #Shorts #Wedding #Karma #Integrity",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v44.mp4",
+    "video_number": "v44",
+    "prompt_id": "P54",
+    "title": "P54: THE CREAM RISES",
+    "description": "Impatient executive threw coffee at a barista... until the coffee chain founder praised the barista and banned the executive for life. ☕🌿😱 #Shorts #Coffee #Respect #Barista",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
+  },
+  {
+    "video_file": "v45.mp4",
+    "video_number": "v45",
+    "prompt_id": "P55",
+    "title": "P55: THE DIRECTOR OF DIRECTORS SPEAKS",
+    "description": "Temperamental movie director screamed at a quiet extra... until the studio head arrived and revealed the extra was the executive producer. 🎬🎥😱 #Shorts #Movie #Director #Karma",
+    "tags": [
+      "Shorts",
+      "Motivation",
+      "Karma",
+      "Respect",
+      "Drama",
+      "Story"
+    ],
+    "categoryId": "22",
+    "privacyStatus": "public",
+    "isShort": true,
+    "madeForKids": false
   }
 ]
